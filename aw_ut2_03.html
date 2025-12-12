@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Frutos Secos - Formulario</title>
+</head>
+<body background="fotos/fondo madera blanco.webp">
+<body>
+
+    <h1>Encuesta sobre los Frutos Secos</h1>
+
+    <form action="procesar.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Información del usuario y opiniones</legend>
+
+            <label>
+                Nombre:
+                <input type="text" name="nombre" required maxlength="30"
+                       placeholder="Introduce tu nombre" tabindex="1">
+            </label>
+            <br><br>
+
+            <label>
+                Opinión sobre los frutos secos:
+                <textarea name="opinion" tabindex="2"></textarea>
+            </label>
+            <br><br>
+
+            <label>¿Te gustan los frutos secos?<br>
+                <input type="radio" name="gusto" value="si" tabindex="3"> Sí
+                <input type="radio" name="gusto" value="no" tabindex="4"> No
+            </label>
+            <br><br>
+
+            <label>
+                ¿En que parte del dia sueles cosumir frutos secos?
+                <input type="checkbox" name="Mañana" tabindex="5"> Mañana
+                <input type="checkbox" name="Tarde" tabindex="6"> Tarde
+                <input type="checkbox" name="Noche" tabindex="7"> noche
+            </label>
+            <br><br>
+
+            <label>
+                Sube una imagen sobre tu fruto seco favorito:
+                <input type="file" name="archivo" tabindex="8">
+            </label>
+            <br><br>
+
+            <label>
+                Fruto seco que mas compras:
+                <select tabindex="9">
+                    <option>Almendras</option>
+                    <option>Nueces</option>
+                    <option>Pistachos</option>
+                    <option>Anacardos</option>
+                    <option>Macadamia</option>
+                    <option>Nuez pecana</option>
+                    <option>Castaña</option>
+                    <option>Piñón</option>
+                    <option>Nuez de Brasil</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label>
+                fruto seco favorito:
+                <select name="seleccion[]" multiple tabindex="10">
+                    <option>Almendras</option>
+                    <option>Nueces</option>
+                    <option>Pistachos</option>
+                    <option>Anacardos</option>
+                    <option>Macadamia</option>
+                    <option>Nuez pecana</option>
+                    <option>Castaña</option>
+                    <option>Piñón</option>
+                    <option>Nuez de Brasil</option>
+                </select>
+            </label>
+            <br><br>
+
+            <input type="hidden" name="oculto" value="12345">
+
+            <label>
+                Campo solo lectura:
+                <input type="text" name="soloLectura" value="esta informacion se proporcionara al creador de la pagina" readonly>
+            </label>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+
+    </form>
+
+    <hr>
+    <p>Para volver a la primera pagina pulse la foto de los anacardos</p>
+    <p>Para volver a la segunda pagina pulse la foto de los pistachos</p>
+
+    <a href="aw_ut2_01.html">
+        <img src="fotos/anacardos.webp" alt="Volver al documento 1" height="200" width="250">
+    </a>
+
+    <a href="aw_ut2_02.html">
+        <img src="fotos/pistacho.webp" alt="Volver al documento 2" height="200" width="250">
+    </a>
+
+</body>
+</html>
